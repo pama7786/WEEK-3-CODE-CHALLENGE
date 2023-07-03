@@ -61,23 +61,23 @@ function displayFilmInfo(id) {
   fetchFilms();
 
 
-  function updateTicket(newTicket, id) {
-    const updateURL = `http://localhost:3000/films/${id}`;
+//   function updateTicket(newTicket, id) {
+//     const updateURL = `http://localhost:3000/films/${id}`;
 
-    fetch(updateURL, {
-    method: 'PATCH',
-    headers: {
-        'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ tickets_sold: newTicket }),
-    })
-    .then((res) => {
-        if (!res.ok) {
-        throw new Error('Failed to update ticket count on the server');
-        }
-        console.log('Ticket count updated successfully');
-    })
-    .catch((error) => {
-        console.error('Error:', error.message);
-});
- }
+//     fetch(updateURL, {
+//     method: 'PATCH',
+//     headers: {
+//         'Content-Type': 'application/json',
+//     },
+//     body: JSON.stringify({ tickets_sold: newTicket }),
+//     })
+//     .then((res) => {
+//         if (!res.ok) {
+//         throw new Error('Failed to update ticket count on the server');
+//         }
+//         console.log('Ticket count updated successfully');
+//     })
+//     .catch((error) => {
+//         console.error('Error:', error.message);
+// });
+//  }

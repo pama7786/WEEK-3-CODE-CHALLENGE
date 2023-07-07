@@ -9,7 +9,7 @@ async function fetchFilms() {
     // try-catch block to handle any errors that may occur while fetching data
   try {
     // send GET request to 'http://localhost:3000/films' to retrieve film data
-    const response = await fetch('https://api.npoint.io/22969df1bc117d0ec873');
+    const response = await fetch('http://localhost:3000/films');
     films = await response.json();
     displayFilmList();
     displayFilmInfo(films[0].id);
